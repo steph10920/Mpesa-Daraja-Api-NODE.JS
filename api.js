@@ -30,8 +30,8 @@ router.get("/api/access_token", (req, res) => {
 });
 
 async function getAccessToken() {
-  const consumer_key = ""; // REPLACE IT WITH YOUR CONSUMER KEY
-  const consumer_secret = ""; // REPLACE IT WITH YOUR CONSUMER SECRET
+  const consumer_key = "AhnfmrRF8Gw6InD4WbmFCRGm6pvEMpfVZYNDXuMsdg3rh22z"; // REPLACE IT WITH YOUR CONSUMER KEY
+  const consumer_secret = "MFn6fuTGnBnz8S9lKjVua9EfqgbKODRczhoAcyx3pqob8kTCA41XPQIRysVO03jA"; // REPLACE IT WITH YOUR CONSUMER SECRET
   const url =
     "https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
 
@@ -92,7 +92,7 @@ router.post('/api/stkpush', (req, res) => {
             PartyA: phoneNumber,
             PartyB: "174379",
             PhoneNumber: phoneNumber,
-            CallBackURL: "https://249e-105-60-226-239.ngrok-free.app/api/callback",
+            CallBackURL: "https://mpesa-daraja-api-node-js.vercel.app/api/callback",
             AccountReference: accountNumber,
             TransactionDesc: "Mpesa Daraja API stk push test",
           },
